@@ -20,6 +20,9 @@
                         <rect key="frame" x="10" y="10" width="377" height="56"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                        <connections>
+                            <action selector="myButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YkT-lR-c5J"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
