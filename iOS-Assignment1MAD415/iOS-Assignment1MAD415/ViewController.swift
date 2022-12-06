@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     @IBOutlet weak var myTable: UITableView!
-    var cellIdentifiers:[String] = ["labelCell", "buttonCell", "switchCell", "segmentCell", "imageCell", "textfieldCell"]
+    var cellIdentifiers:[String] = ["labelCell", "buttonCell", "switchCell", "segmentCell", "imageCell", "textfieldCell", "sliderCell", "progressCell", "stepperCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let textfieldCellNib = UINib(nibName: "TextFieldTableViewCell", bundle: nil)
         myTable.register(textfieldCellNib, forCellReuseIdentifier: "textfieldCell")
+        
+        let sliderCellNib = UINib(nibName: "SliderTableViewCell", bundle: nil)
+        myTable.register(sliderCellNib, forCellReuseIdentifier: "sliderCell")
+        
+        let progressCellNib = UINib(nibName: "ProgressTableViewCell", bundle: nil)
+        myTable.register(progressCellNib, forCellReuseIdentifier: "progressCell")
+        
+        
+        let stepperCellNib = UINib(nibName: "StepperTableViewCell", bundle: nil)
+        myTable.register(stepperCellNib, forCellReuseIdentifier: "stepperCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

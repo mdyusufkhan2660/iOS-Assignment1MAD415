@@ -28,6 +28,12 @@
 		50EDCC9E293F9D1D0071A4EB /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EDCC9C293F9D1D0071A4EB /* ImageTableViewCell.xib */; };
 		50EDCCA1293F9E180071A4EB /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EDCC9F293F9E180071A4EB /* TextFieldTableViewCell.swift */; };
 		50EDCCA2293F9E180071A4EB /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EDCCA0293F9E180071A4EB /* TextFieldTableViewCell.xib */; };
+		50EDCCA5293FA7960071A4EB /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EDCCA3293FA7960071A4EB /* SliderTableViewCell.swift */; };
+		50EDCCA6293FA7960071A4EB /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EDCCA4293FA7960071A4EB /* SliderTableViewCell.xib */; };
+		50EDCCA9293FA8730071A4EB /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EDCCA7293FA8730071A4EB /* ProgressTableViewCell.swift */; };
+		50EDCCAA293FA8730071A4EB /* ProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EDCCA8293FA8730071A4EB /* ProgressTableViewCell.xib */; };
+		50EDCCAD293FA97C0071A4EB /* StepperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EDCCAB293FA97C0071A4EB /* StepperTableViewCell.swift */; };
+		50EDCCAE293FA97C0071A4EB /* StepperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EDCCAC293FA97C0071A4EB /* StepperTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		50EDCC9C293F9D1D0071A4EB /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		50EDCC9F293F9E180071A4EB /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		50EDCCA0293F9E180071A4EB /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		50EDCCA3293FA7960071A4EB /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
+		50EDCCA4293FA7960071A4EB /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		50EDCCA7293FA8730071A4EB /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		50EDCCA8293FA8730071A4EB /* ProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressTableViewCell.xib; sourceTree = "<group>"; };
+		50EDCCAB293FA97C0071A4EB /* StepperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperTableViewCell.swift; sourceTree = "<group>"; };
+		50EDCCAC293FA97C0071A4EB /* StepperTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepperTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,8 @@
 				50EDCC57293F88490071A4EB /* AppDelegate.swift */,
 				50EDCC59293F88490071A4EB /* SceneDelegate.swift */,
 				50EDCC5B293F88490071A4EB /* ViewController.swift */,
+				50EDCCA7293FA8730071A4EB /* ProgressTableViewCell.swift */,
+				50EDCCA8293FA8730071A4EB /* ProgressTableViewCell.xib */,
 				50EDCC8F293F9AFC0071A4EB /* SwitchTableViewCell.swift */,
 				50EDCC90293F9AFC0071A4EB /* SwitchTableViewCell.xib */,
 				50EDCC8B293F97110071A4EB /* ButtonTableViewCell.swift */,
@@ -142,6 +156,10 @@
 				50EDCC9C293F9D1D0071A4EB /* ImageTableViewCell.xib */,
 				50EDCC9F293F9E180071A4EB /* TextFieldTableViewCell.swift */,
 				50EDCCA0293F9E180071A4EB /* TextFieldTableViewCell.xib */,
+				50EDCCA3293FA7960071A4EB /* SliderTableViewCell.swift */,
+				50EDCCA4293FA7960071A4EB /* SliderTableViewCell.xib */,
+				50EDCCAB293FA97C0071A4EB /* StepperTableViewCell.swift */,
+				50EDCCAC293FA97C0071A4EB /* StepperTableViewCell.xib */,
 			);
 			path = "iOS-Assignment1MAD415";
 			sourceTree = "<group>";
@@ -269,10 +287,13 @@
 			files = (
 				50EDCC64293F884A0071A4EB /* LaunchScreen.storyboard in Resources */,
 				50EDCC61293F884A0071A4EB /* Assets.xcassets in Resources */,
+				50EDCCAA293FA8730071A4EB /* ProgressTableViewCell.xib in Resources */,
 				50EDCC8E293F97110071A4EB /* ButtonTableViewCell.xib in Resources */,
 				50EDCC92293F9AFC0071A4EB /* SwitchTableViewCell.xib in Resources */,
 				50EDCCA2293F9E180071A4EB /* TextFieldTableViewCell.xib in Resources */,
 				50EDCC8A293F8E9A0071A4EB /* LabelTableViewCell.xib in Resources */,
+				50EDCCAE293FA97C0071A4EB /* StepperTableViewCell.xib in Resources */,
+				50EDCCA6293FA7960071A4EB /* SliderTableViewCell.xib in Resources */,
 				50EDCC9E293F9D1D0071A4EB /* ImageTableViewCell.xib in Resources */,
 				50EDCC5F293F88490071A4EB /* Main.storyboard in Resources */,
 				50EDCC96293F9C200071A4EB /* SegmentTableViewCell.xib in Resources */,
@@ -304,11 +325,14 @@
 				50EDCC9D293F9D1D0071A4EB /* ImageTableViewCell.swift in Sources */,
 				50EDCC58293F88490071A4EB /* AppDelegate.swift in Sources */,
 				50EDCC95293F9C200071A4EB /* SegmentTableViewCell.swift in Sources */,
+				50EDCCA5293FA7960071A4EB /* SliderTableViewCell.swift in Sources */,
 				50EDCC8D293F97110071A4EB /* ButtonTableViewCell.swift in Sources */,
 				50EDCC89293F8E9A0071A4EB /* LabelTableViewCell.swift in Sources */,
+				50EDCCAD293FA97C0071A4EB /* StepperTableViewCell.swift in Sources */,
 				50EDCCA1293F9E180071A4EB /* TextFieldTableViewCell.swift in Sources */,
 				50EDCC5A293F88490071A4EB /* SceneDelegate.swift in Sources */,
 				50EDCC91293F9AFC0071A4EB /* SwitchTableViewCell.swift in Sources */,
+				50EDCCA9293FA8730071A4EB /* ProgressTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
