@@ -16,18 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qLh-7w-mdq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a5r-c4-i9w">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwT-Xe-kqe">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qLh-7w-mdq">
+                                        <rect key="frame" x="0.0" y="68" width="393" height="725"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qLh-7w-mdq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0m0-IH-MDf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qLh-7w-mdq" secondAttribute="trailing" id="EeA-UI-ilo"/>
-                            <constraint firstItem="qLh-7w-mdq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uck-gh-f6d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qLh-7w-mdq" secondAttribute="bottom" id="gqO-VJ-Pjc"/>
+                            <constraint firstAttribute="bottom" secondItem="a5r-c4-i9w" secondAttribute="bottom" id="8ll-zE-yTM"/>
+                            <constraint firstItem="a5r-c4-i9w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zch-F1-fVv"/>
+                            <constraint firstAttribute="trailing" secondItem="a5r-c4-i9w" secondAttribute="trailing" id="co2-zH-CAF"/>
+                            <constraint firstItem="a5r-c4-i9w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xKt-GW-UZu"/>
                         </constraints>
                     </view>
                     <connections>
