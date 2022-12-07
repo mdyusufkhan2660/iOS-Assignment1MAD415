@@ -39,6 +39,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myProgress" destination="eWX-EB-Bdf" id="Vf4-n6-Eke"/>
+                <outlet property="progressValue" destination="UjM-De-A9J" id="Uvz-O2-BHZ"/>
+            </connections>
             <point key="canvasLocation" x="107" y="20"/>
         </tableViewCell>
     </objects>

@@ -67,16 +67,20 @@ class ViewController: UIViewController, UITableViewDataSource {
 }
 extension ViewController: ButtonTableViewCellDelegate{
     func myButton(with title: String) {
-        // Create new Alert
-        var dialogMessage = UIAlertController(title: "Demo Alert", message: "Demo alert message", preferredStyle: .alert)
-        
+        // Create Alert
+        var dialogMessage = UIAlertController(title: "Alert Box Title", message: "Alert Box Message", preferredStyle: .alert)
         // Create OK button with action handler
-        let ok = UIAlertAction(title: "OK", style: .default)
-        
-        //Add OK button to a dialog message
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            print("Ok button tapped")
+        })
+        // Create Cancel button with action handlder
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+            print("Cancel button tapped")
+        }
+        //Add OK and Cancel button to an Alert object
         dialogMessage.addAction(ok)
-
-        // Present Alert to
+        dialogMessage.addAction(cancel)
+        // Present alert message to user
         self.present(dialogMessage, animated: true, completion: nil)
     }
 }
