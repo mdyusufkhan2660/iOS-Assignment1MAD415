@@ -9,9 +9,16 @@ import UIKit
 
 class SliderTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var sliderValue: UILabel!
+    @IBOutlet weak var mySlider: UISlider!
+    
+    @IBAction func sliderControl(_ sender: UISlider) {
+        sliderValue.text = "\(Int(mySlider.value*100))"
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        sliderValue.text = "\(Int(mySlider.value*100))"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -16,14 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-IS-s0f">
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xC2-IS-s0f">
                         <rect key="frame" x="10" y="10" width="300" height="24"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qRO-0v-u7a">
-                                <rect key="frame" x="-2" y="0.0" width="252" height="25"/>
+                                <rect key="frame" x="-2" y="0.0" width="283.66666666666669" height="25"/>
+                                <connections>
+                                    <action selector="sliderControl:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Yph-Ib-4C8"/>
+                                </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVo-gh-HbZ">
-                                <rect key="frame" x="258" y="2" width="42" height="20.333333333333332"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVo-gh-HbZ">
+                                <rect key="frame" x="289.66666666666669" y="2" width="10.333333333333314" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,6 +42,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mySlider" destination="qRO-0v-u7a" id="deC-Ra-Idz"/>
+                <outlet property="sliderValue" destination="tVo-gh-HbZ" id="Erc-g9-WmZ"/>
+            </connections>
             <point key="canvasLocation" x="107" y="20"/>
         </tableViewCell>
     </objects>
