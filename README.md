@@ -13,3 +13,7 @@ TextField
 Slider and value
 Progress view and value
 Stepper and value
+
+
+#### Sample output
+![alt text]()
