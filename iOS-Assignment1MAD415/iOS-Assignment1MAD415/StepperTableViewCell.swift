@@ -9,6 +9,10 @@ import UIKit
 
 class StepperTableViewCell: UITableViewCell {
 
+    @IBAction func stepperControl(_ sender: UIStepper) {
+        stepperValue.text = String(Int(sender.value))
+    }
+    @IBOutlet weak var stepperValue: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
