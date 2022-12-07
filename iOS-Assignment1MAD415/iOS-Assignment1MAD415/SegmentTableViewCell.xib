@@ -25,6 +25,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Xlk-dR-rtn"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9e-Tg-VVS">
                                 <rect key="frame" x="155" y="0.0" width="145" height="24"/>
@@ -43,6 +46,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mySegment" destination="oVg-Xa-G6H" id="fCn-2t-tAY"/>
+                <outlet property="segmentStatus" destination="H9e-Tg-VVS" id="SEJ-Du-gOo"/>
+            </connections>
             <point key="canvasLocation" x="107" y="20"/>
         </tableViewCell>
     </objects>
