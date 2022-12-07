@@ -7,22 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource {
    
     @IBOutlet weak var myTable: UITableView!
-    var cellIdentifiers:[String] = ["labelCell", "buttonCell", "switchCell", "segmentCell", "imageCell", "textfieldCell", "sliderCell", "progressCell", "stepperCell"]
+    var cellIdentifiers:[String] = ["labelCell", "ButtonTableViewCell", "switchCell", "segmentCell", "imageCell", "textfieldCell", "sliderCell", "progressCell", "stepperCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        myTable.delegate = self
         myTable.dataSource = self
         
         let labelCellNib = UINib(nibName: "LabelTableViewCell", bundle: nil)
         myTable.register(labelCellNib, forCellReuseIdentifier: "labelCell")
         
-        let buttonCellNib = UINib(nibName: "ButtonTableViewCell", bundle: nil)
-        myTable.register(buttonCellNib, forCellReuseIdentifier: "buttonCell")
+        
+        myTable.register(ButtonTableViewCell.nib(), forCellReuseIdentifier: ButtonTableViewCell.identifier)
         
         let switchCellNib = UINib(nibName: "SwitchTableViewCell", bundle: nil)
         myTable.register(switchCellNib, forCellReuseIdentifier: "switchCell")
@@ -52,13 +51,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = myTable.dequeueReusableCell(withIdentifier: cellIdentifiers[indexPath.row], for: indexPath)
-        
-        return cell
-        
+
+        if(cellIdentifiers[indexPath.row] == "ButtonTableViewCell"){
+            let cell = myTable.dequeueReusableCell(withIdentifier: cellIdentifiers[indexPath.row], for: indexPath) as! ButtonTableViewCell
+            cell.delegate = self
+            return cell
+        }
+        else{
+            let cell = myTable.dequeueReusableCell(withIdentifier: cellIdentifiers[indexPath.row], for: indexPath)
+            return cell
+        }
     }
 
 
+}
+extension ViewController: ButtonTableViewCellDelegate{
+    func myButton(with title: String) {
+        // Create new Alert
+        var dialogMessage = UIAlertController(title: "Demo Alert", message: "Demo alert message", preferredStyle: .alert)
+        
+        // Create OK button with action handler
+        let ok = UIAlertAction(title: "OK", style: .default)
+        
+        //Add OK button to a dialog message
+        dialogMessage.addAction(ok)
+
+        // Present Alert to
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
 }
 

@@ -9,6 +9,7 @@ import UIKit
 
 class SwitchTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var switchStatus: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +21,12 @@ class SwitchTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func mySwitch(_ sender: UISwitch) {
+        if(sender.isOn == true){
+            switchStatus.text = "ON"
+        }
+        else{
+            switchStatus.text = "OFF"
+        }
+    }
 }
