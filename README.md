@@ -16,4 +16,4 @@ Stepper and value
 
 
 #### Sample output
-![alt text](https://github.com/mdyusufkhan2660/iOS-Assignment1MAD415/blob/main/Screen%20Recording%202022-12-07%20at%209.14.36%20AM.mov)
+![alt text](https://github.com/mdyusufkhan2660/iOS-Assignment1MAD415/blob/main/ezgif.com-gif-maker.gif)
